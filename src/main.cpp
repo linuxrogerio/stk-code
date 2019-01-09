@@ -1886,8 +1886,6 @@ int main(int argc, char *argv[] )
         // handle all command line options that do not need (or must
         // not have) other managers initialised:
         initUserConfig();
-        
-        UserConfigParams::m_multitouch_enabled = true;
 
         CommandLine::addArgsFromUserConfig();
 
