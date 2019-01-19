@@ -169,6 +169,7 @@ namespace irr
         wl_display* m_display;
         wl_egl_window* m_egl_window;
         wl_keyboard* m_keyboard;
+        wl_touch* m_touch;
         wl_output* m_output;
         wl_pointer* m_pointer;
         wl_registry* m_registry;
@@ -214,7 +215,7 @@ namespace irr
         uint32_t m_mouse_button_states;
         unsigned int m_width;
         unsigned int m_height;
-
+        unsigned int m_touches_count;
         bool m_window_has_focus;
         bool m_window_minimized;
         mutable core::stringc m_clipboard;
